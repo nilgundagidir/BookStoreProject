@@ -1,0 +1,48 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Çilek Kitabevi -Online Kitap Alışveriş Siteniz</title>
+</head>
+<body>
+
+	<div align="center">  
+	<h1><jsp:directive.include file="header.jsp" /></h1> 
+	</div>
+	<br/><br/>
+	<div align="center">  
+	<h2>new books</h2>
+	<div class="book-group">
+		<c:forEach items="${listBooks}" var="book">
+			<div class="book">
+				<div>
+					<a href="view_book?id=${book.bookId}">
+						<img class="book-small" src="data:image/jpg;base64,${book.base64Image}" />
+					</a>
+				</div>
+				<div>
+					<a href="view_book?id=${book.bookId}">
+						<b>${book.title}</b>
+					</a>
+				</div>
+				<div>
+					<jsp:directive.include file="book_rating.jsp" />				
+				</div>
+				<div><i>by ${book.author}</i></div>
+				<div><b>$${book.price}</b></div>
+			</div>
+			
+		</c:forEach>
+	</div>
+	<h4>best-selling</h4>
+	<h4>most-fav</h4>
+	<br/><br/>
+	</div>
+	<div align="center">  
+	<h3><jsp:directive.include file="footer.jsp" /></h3> 
+	</div>
+	
+</body>
+</html>

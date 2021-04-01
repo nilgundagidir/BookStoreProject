@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+#headermenu {
+	display: table;
+}
+
+#headermenu div {
+	display:table-cell; 
+	padding-right: 20px;
+}
+
+a:link {
+	color: crimson;
+	text-decoration: none;
+}
+
+a:visited {
+	color: indianred;
+}
+
+a:hover {
+	color: lightsalmon;
+	text-decoration: underline;
+}
+
+a:active {
+	color: salmon;
+}
+
+#headermenu a:link {
+	font-size: larger;
+}
+
+.pageheading {
+	color: lightcoral;
+}
+
+
+table {
+	border: 1px lightcoral;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 8px;
+}
+
+th {
+	background: salmon;
+	color: crimson;
+	font-size: larger;
+}
+
+table.form {
+	border: 0;
+	padding: 4px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+button {
+	padding: 6px;
+	border-radius: 5px;
+}
+
+button[type=submit] {
+	font-weight: bold;
+}
+
+button:hover {
+	background-color: pink;
+	color: deep pink;
+}
+
+input {
+	border: 1px solid;
+	border-radius: 4px;	
+	border-color: orchid;
+	height: 20px;
+}
+
+.message {
+	font-style: italic;
+	color: orchid;
+}
+
+.error {
+	color: orchid;
+	font-style: italic;
+	margin: 5px;
+}
+
+div.center {
+	text-align: center;
+}
+
+div.book {
+	display: inline-block;
+	margin: 20px;
+	text-align: center;
+}
+
+table.book {
+	width: 80%;
+	border: 0;
+	margin: 0 auto;
+}
+
+table.normal {
+	border: 0;
+}
+
+div.book_group {
+	width: 80%; 
+	margin: 0 auto;
+}
+
+div.next-row {
+	clear:both;
+}
+
+img.book-small {
+	width: 128px; height: 164px;
+}
+
+img.book-large {
+	width: 240px; height: 300px;
+}
+
+#book-title {
+	font-size: x-large;
+	font-weight: bold;
+}
+
+#author {
+	font-size: large;
+	font-style: italic;
+}
+
+#description {
+	text-align: justify;
+	vertical-align: top;
+}
+
+#search-image {
+	display: inline-block; margin: 20px; width: 10%;
+}
+
+#search-description {
+	display: inline-block; margin: 20px; vertical-align: top; width: 50%;
+	text-align: left;
+}
+
+#search-price {
+	display: inline-block; margin: 20px; vertical-align: top;
+}
